@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Hindi Tuition Centre</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+
+/* Header */
+
+header{
+background:linear-gradient(135deg,#111827,#020617);
+padding:30px;
+text-align:center;
+border-bottom:2px solid #d4af37;
+animation:down 1s;
+}
+
+header h1{
+font-size:45px;
+color:#d4af37;
+}
+
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+animation:fade 2s;
+}
+
+.hero h2{
+font-size:38px;
+color:#facc15;
+}
+
+.hero p{
+font-size:20px;
+margin:20px;
+color:#ddd;
+}
+
+
+/* Buttons */
+
+.btn{
+
+padding:15px 30px;
+border:none;
+border-radius:40px;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+background:#d4af37;
+color:#111;
+transition:.5s;
+margin:10px;
+
+}
+
+
+.btn:hover{
+
+transform:scale(1.1);
+box-shadow:0 0 25px #d4af37;
+
+}
+
+
+.apply{
+
+background:#10b981;
+color:white;
+
+}
+
+
+.apply:hover{
+
+background:#059669;
+box-shadow:0 0 25px #10b981;
+
+}
+
+
+
+/* Details */
+
+#details{
+
+display:none;
+max-width:600px;
+margin:20px auto;
+padding:30px;
+
+background:#111827;
+border:1px solid #d4af37;
+border-radius:20px;
+
+animation:fade 1s;
+
+}
+
+
+#details h2{
+
+color:#d4af37;
+margin-bottom:15px;
+
+}
+
+
+
+/* Cards */
+
+.container{
+
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:40px;
+
+}
+
+
+
+.card{
+
+width:270px;
+padding:30px;
+
+background:rgba(255,255,255,0.08);
+
+border:1px solid #d4af37;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.5s;
+
+animation:up 1.5s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-15px);
+box-shadow:0 0 25px #d4af37;
+
+}
+
+
+.card h3{
+
+color:#facc15;
+margin-bottom:15px;
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+background:#020617;
+text-align:center;
+padding:20px;
+color:#d4af37;
+
+}
+
+
+
+
+/* Animations */
+
+
+@keyframes fade{
+
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+
+@keyframes down{
+
+from{
+transform:translateY(-50px);
+}
+
+to{
+transform:translateY(0);
+}
+
+}
+
+
+@keyframes up{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+<h2>✨ Pooja Hindi Tuition✨</h2>
+
+<p>Spoken Learning centre</p>
+
+</header>
+
+<a class="btn youtube"
+
+href="https://youtu.be/SFnMzGidwdE"
+target="_blank">
+
+▶ YouTube
+
+</a>
+
+
+<a class="btn youtube"
+
+href="https://youtube.com/shorts/yDhwNCi0AqM?feature=share"
+target="_blank">
+
+▶ YouTube
+
+</a>
+<section class="hero">
+
+
+<h2>Online Classes Only</h2>
+<p>age above 15</p>
+
+
+<p>
+Learn Grammar • Speaking
+</p>
+
+
+<button class="btn" onclick="details()">
+
+📚 About Us
+
+</button>
+
+
+
+<a href="https://forms.gle/KTRE5Rh26Z2RnPwHA" target="_blank">
+
+<button class="btn apply">
+
+📝 Application Form
+
+</button>
+
+</a>
+
+
+</section>
+
+
+
+
+<div id="details">
+
+
+<h2>📖 About Us</h2>
+
+
+<p>⭐ 25 Years Of Training Experiance</p>
+
+<br>
+
+<p>⭐ DBHPS Certified Teacher and native gujarat</p>
+
+<br>
+
+<p>⭐ 3200+ Students Were Passed Out</p>
+
+
+</div>
+
+
+
+
+
+<section class="container">
+
+
+
+<div class="card">
+
+<h3>👨‍🏫 Expert Teachers</h3>
+
+<p>
+Experienced teacher (native gujarat) with easy teaching through tamil language methods.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>📘 Study Material</h3>
+
+<p>
+Original notes
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>🎯 Online Classes</h3>
+
+<p>
+Monday, Wednesday,Friday In Google Meet and whatsapp
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>🗣 Speaking Skills</h3>
+
+<p>
+Improve Hindi speaking confidence.
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+<footer>
+
+© 2026 Thillai Data Tech, Chidambaram.
+
+</footer>
+
+
+
+
+<script>
+
+
+function details(){
+
+let d=document.getElementById("details");
+
+
+if(d.style.display=="block")
+{
+d.style.display="none";
+}
+
+else
+{
+d.style.display="block";
+}
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>
